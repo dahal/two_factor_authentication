@@ -18,7 +18,7 @@ module Devise
   @@otp_length = 6
 
   mattr_accessor :remember_otp_session_for_seconds
-  @@remember_otp_session_for_seconds = 0
+  @@remember_otp_session_for_seconds = 90.days
 end
 
 module TwoFactorAuthentication
