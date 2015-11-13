@@ -9,10 +9,10 @@ require "rotp"
 
 module Devise
   mattr_accessor :max_login_attempts
-  @@max_login_attempts = 3
+  @@max_login_attempts = 10
 
   mattr_accessor :allowed_otp_drift_seconds
-  @@allowed_otp_drift_seconds = 30
+  @@allowed_otp_drift_seconds = 600
 
   mattr_accessor :otp_length
   @@otp_length = 6
