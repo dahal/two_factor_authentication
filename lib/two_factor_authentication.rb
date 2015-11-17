@@ -15,7 +15,7 @@ module Devise
   @@allowed_otp_drift_seconds = 600
 
   mattr_accessor :otp_length
-  @@otp_length = 6
+  @@otp_length = 8
 
   mattr_accessor :remember_otp_session_for_seconds
   @@remember_otp_session_for_seconds = 90.days
